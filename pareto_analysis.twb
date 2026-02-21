@@ -1,0 +1,249 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20234.24.0108.1528                               -->
+<workbook original-version='18.1' source-build='2023.4.0 (20234.24.0108.1528)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='customer_revenue_data' inline='true' name='federated.1234567' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='customer_revenue_data' name='textscan.1234567'>
+            <connection class='textscan' directory='.' filename='customer_revenue_data.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1234567' name='customer_revenue_data.csv' table='[customer_revenue_data#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='Customer' ordinal='0' />
+            <column datatype='integer' name='Revenue' ordinal='1' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1234567' name='customer_revenue_data.csv' table='[customer_revenue_data#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='Customer' ordinal='0' />
+            <column datatype='integer' name='Revenue' ordinal='1' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <cols>
+          <map key='[Customer]' value='[customer_revenue_data.csv].[Customer]' />
+          <map key='[Revenue]' value='[customer_revenue_data.csv].[Revenue]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[customer_revenue_data.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Customer</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Customer]</local-name>
+            <parent-name>[customer_revenue_data.csv]</parent-name>
+            <remote-alias>Customer</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[customer_revenue_data.csv_1234567890ABCDEF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Revenue</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Revenue]</local-name>
+            <parent-name>[customer_revenue_data.csv]</parent-name>
+            <remote-alias>Revenue</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[customer_revenue_data.csv_1234567890ABCDEF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Customer Name' datatype='string' name='[Customer]' role='dimension' type='nominal' />
+      <column caption='Revenue ($)' datatype='integer' name='[Revenue]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='customer_revenue_data.csv' datatype='table' name='[__tableau_internal_object_id__].[customer_revenue_data.csv_1234567890ABCDEF]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='customer_revenue_data.csv' id='customer_revenue_data.csv_1234567890ABCDEF'>
+            <properties context=''>
+              <relation connection='textscan.1234567' name='customer_revenue_data.csv' table='[customer_revenue_data#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='Customer' ordinal='0' />
+                  <column datatype='integer' name='Revenue' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Pareto Analysis'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='customer_revenue_data' name='federated.1234567' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1234567'>
+            <column caption='Customer Name' datatype='string' name='[Customer]' role='dimension' type='nominal' />
+            <column-instance column='[Customer]' derivation='None' name='[none:Customer:nk]' pivot='key' type='nominal' />
+            <column caption='Revenue ($)' datatype='integer' name='[Revenue]' role='measure' type='quantitative' />
+            <column-instance column='[Revenue]' derivation='Sum' name='[sum:Revenue:qk]' pivot='key' type='quantitative' />
+            <column datatype='integer' name='[Calculation_1234567890123456]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='RUNNING_SUM(SUM([Revenue]))' />
+            </column>
+            <column-instance column='[Calculation_1234567890123456]' derivation='User' name='[usr:Calculation_1234567890123456:qk]' pivot='key' type='quantitative' />
+            <column datatype='real' name='[Calculation_2345678901234567]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='RUNNING_SUM(SUM([Revenue])) / TOTAL(SUM([Revenue]))' />
+            </column>
+            <column-instance column='[Calculation_2345678901234567]' derivation='User' name='[usr:Calculation_2345678901234567:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1234567].[none:Customer:nk]' />
+              <text column='[federated.1234567].[none:Customer:nk]' />
+              <lod column='[federated.1234567].[usr:Calculation_1234567890123456:qk]' />
+              <lod column='[federated.1234567].[usr:Calculation_2345678901234567:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1234567].[sum:Revenue:qk]</rows>
+        <cols>[federated.1234567].[none:Customer:nk]</cols>
+      </table>
+      <simple-id uuid='{12345678-1234-1234-1234-123456789012}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Pareto Analysis'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1234567].[none:Customer:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{12345678-1234-1234-1234-123456789ABC}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Pareto Analysis' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
