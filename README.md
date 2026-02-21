@@ -89,8 +89,8 @@ To use your own data:
 ## Insights from Sample Data
 
 From the included sample dataset:
-- Top 5 customers (19% of customers) generate approximately 48% of total revenue
-- Top 10 customers (38% of customers) generate approximately 73% of total revenue
+- Top 5 customers (19% of customers) generate approximately 57% of total revenue
+- Top 10 customers (38% of customers) generate approximately 82% of total revenue
 - This demonstrates the classic Pareto principle in action
 
 ## Business Applications
