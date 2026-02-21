@@ -17,6 +17,13 @@ Pareto Analysis is a decision-making technique that statistically separates a li
 
 - **customer_revenue_data.csv** - Sample dataset containing customer names and their revenue contributions
 - **pareto_analysis.twb** - Tableau workbook with pre-built Pareto analysis visualization
+- **pareto_analysis_chart.png** - Example visualization showing the Pareto analysis output
+
+## Example Visualization
+
+![Pareto Analysis Chart](pareto_analysis_chart.png)
+
+The chart above demonstrates the Pareto principle with the sample data, showing how 10 customers (38% of the customer base) generate approximately 82% of the total revenue.
 
 ## Dataset Structure
 
